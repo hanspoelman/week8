@@ -23,3 +23,9 @@ Route::get('/create', function () {
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/list', function () {
+    return view('list');
+});
+Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/ads/{orderby?}/{direction?}', 'AdController@list');
+
