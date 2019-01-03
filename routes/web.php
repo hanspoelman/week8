@@ -28,4 +28,5 @@ Route::get('/list', function () {
 });
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ads/{orderby?}/{direction?}', 'AdController@list');
+Route::post('/ads', 'AdController@store');
 

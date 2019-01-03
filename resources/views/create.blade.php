@@ -14,7 +14,7 @@
                         </div>
                     @endif
     
-                    <form method="POST" action="{{ route('create') }}">
+                    <form method="POST" action="ads">
                         @csrf
                             <div class="form-group row">
                             <label for="titel" class="col-md-4 col-form-label text-md-right">Titel </label><br>
