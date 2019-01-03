@@ -19,6 +19,7 @@ class CreateAdsTable extends Migration
             $table->foreign('user_id')->references('id')->on('users');
             $table->string('title');
             $table->text('body');
+            $table->float('asking_price');
             $table->boolean('status')->default($value = 1);
             $table->timestamps();
         });
