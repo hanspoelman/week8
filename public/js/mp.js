@@ -59,7 +59,7 @@ function detectPage(pageName) {
 function insertContent() {
     var holder = "";
     for(i=0;i<x.length;i++) {
-        holder += "<tr><td>"+ x[i]['title'] + "</td>" + "<td>"+ x[i]['body'] + "</td>" + "<td>"+ x[i]['asking_price'] + "</td>"+ "<td>"+ x[i]['created_at'] + "</td></tr>";
+        holder += "<div class='col-md-4'><div class='card mt-4'><div class='card-header'><h5 style='padding-top:8px;'>"+ x[i]['title'] + "</h5></div><div class='card-body'><p class='card-text'>"+ x[i]['body'] + "</p><ul class='list-group list-group-flush'><li class='list-group-item'>Asking price: "+ x[i]['asking_price'] + "</li><li class='list-group-item'>Placed at: "+ x[i]['created_at'] + "</li></ul><br><a href='#' class='btn btn-primary'>Go to ad</a></div></div></div>";
     }
     document.getElementById("contenttable").innerHTML = holder;
 }

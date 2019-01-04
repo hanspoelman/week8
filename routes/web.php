@@ -12,7 +12,7 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('list');
 });
 
 Route::get('/create', function () {
@@ -22,7 +22,9 @@ Route::get('/create', function () {
 
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/list', function () {
+    return view('list');
+})->name('home');
 Route::get('/list', function () {
     return view('list');
 });

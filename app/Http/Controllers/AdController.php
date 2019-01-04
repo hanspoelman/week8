@@ -1,9 +1,9 @@
 <?php
 
-namespace App\Http\Controllers;
+namespace Marktplaats\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Ad;
+use Marktplaats\Ad;
 
 class AdController extends Controller
 {
