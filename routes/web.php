@@ -27,7 +27,7 @@ Route::get('/list', function () {
 })->name('home');
 Route::get('/list', function () {
     return view('list');
-});
+})->name('list');;
 Route::get('/home', 'HomeController@index')->name('home');
 Route::get('/ads/{orderby?}/{direction?}', 'AdController@list');
 Route::post('/ads', 'AdController@store');
